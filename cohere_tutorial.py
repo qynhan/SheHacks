@@ -9,10 +9,11 @@ Passage: ArtificialIvan, a seven-year-old, London-based payment and expense mana
 
 TLDR: ArtificialIvan has raised $190 million in Series C funding.
 --
-Passage: You can acquire Content on our Services for free or for a charge, either of which is referred to as a “Transaction.” Each Transaction is an electronic contract between you and Apple, and/or you and the entity providing the Content on our Services. However, if you are a customer of Apple Distribution International Ltd., Apple Distribution International Ltd. is the merchant of record for some Content you acquire from Apple Books, Apple Podcasts, or App Store as displayed on the product page and/or during the acquisition process for the relevant Service. In such case, you acquire the Content from Apple Distribution International Ltd., which is licensed by the Content provider (e.g., App Provider (as defined below), book publisher, etc.). When you make your first Transaction, we will ask you to choose how frequently we should ask for your password for future Transactions. On applicable Apple hardware, if you enable Touch ID for Transactions, we will ask you to authenticate all Transactions with your fingerprint, and if you enable Face ID for Transactions, we will ask you to authenticate all Transactions using facial recognition.
+Passage: The National Weather Service announced Tuesday that a freeze warning is in effect for the Bay Area, with freezing temperatures expected in these areas overnight. Temperatures could fall into the mid-20s to low 30s in some areas. In anticipation of the hard freeze, the weather service warns people to take action now.
 
 TLDR:"""
 
+print(prompt)
 
 response = co.generate( 
     model='xlarge', 
