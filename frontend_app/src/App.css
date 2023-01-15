@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: '#917ef3';
 }
 
 .App-logo {
@@ -43,4 +44,8 @@ body {
   padding: 40px;
   font-family: Arial;
   text-align: center;
+}
+
+input {
+  width: 90%;
 }
