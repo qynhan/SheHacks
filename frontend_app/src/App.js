@@ -4,9 +4,6 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
 
 function App() {
@@ -30,21 +27,18 @@ function App() {
   }
   
   return (
-    <div className="App" style={{backgroundColor: '#917ef3', fontFamily: 'PlayfairWght'}}> 
+    <div className="App" style={{backgroundColor: '#917ef3', fontFamily: 'PlayfairWght', padding: "10px", margin: "5%"}}> 
       <div class="row">
-        <div class="col-sm">
-          <h1>Free Your Eyes!</h1>
-          <h4>Harness the power of tool to improve reading efficiency. </h4>
+        <div class="col-sm" style={{width: "90%"}}>
+          <h1 style={{fontSize: "500%", textAlign: "left", width: "200%"}}>Free Your Eyes</h1>
         </div>
+        
         <div class="col-sm">
-          <p>Don’t want to read all Terms&Conditions before consent?</p>
-          <p>Having dyslexia? Too lazy for reading long paragraph?</p>
-          <p>No worries!</p>
-          <p>This AI is here to free your eyes! Join the “Free Your Eyes” by SheHacks to generate, categorize and organize text, enjoy your experience.</p>
+          <h4 style={{float: "right", width: "50%"}}>Harness the power of tools to improve reading efficiency. </h4>
         </div>
       </div>
       <Form>
-        <input type="text" placeholder="Input text you wish to summarize here" onChange={getData}/>
+        <input type="text" placeholder="Input text you wish to summarize here" style={{margin:"20px"}} onChange={getData}/>
       </Form>
       
       {
@@ -53,14 +47,20 @@ function App() {
         :null
       }
 
-      <p>{output}</p>
-
-      <Button variant="primary" onClick={()=>{
+      <Button variant="primary" style={{margin:"10px"}} onClick={()=>{
         setPrint(true)
         summarize()
-      }}>Print Value</Button>{' '}
+      }}>Summarize</Button>{' '}
+     
+
+      <h2>{output}</h2>
+
       
-        
+      <div class="footer">
+        <p>The tool to get you started on reading Term & Conditions</p>
+      </div>
+
+      
     </div>
   );
 }
